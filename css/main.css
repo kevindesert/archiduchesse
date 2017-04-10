@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -47,20 +51,17 @@ hr {
     padding: 0;
 }
 
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
@@ -72,6 +73,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +81,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,125 +94,115 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*common rules*/
-*
-{
-  margin: 0;
-  padding: 0;
-}
-.nomobile
-{
-  display: none
-}
-img
-{
-  width:auto;
-}
-
-/*common rules*/
-
-/*header*/
-
-figure
-{
-  margin: 0;
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-.onglet
-{
-  width: 24px;
-  height:24px;
-}
-.logo
-{
-  width: 200px;
-  height: 50px;
-}
-.cadis
-{
-  width: 24px;
-  height:24px;
-}
-/*end of the header*/
-
-/*aside*/
-aside
-{
-  width: 90%;
-}
-
-aside nav ul
-{
-  display: inline-flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-left: 2em;
 
 
-}
-aside nav ul li
-{
+/*COMMON RULES*/
 
-  border: 1px solid;
-  color: #DCDCDC;
-  width: 22%;
-  text-align: center;
-  margin-top: 5px;
-  background-color: #A3A3A3;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 200;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/*section top*/
-.top
-{
-  background-color: red;
+.nomobile {
+    display: none
 }
-.top h1
-{
-  font-size: 1.8em;
-  font-family: Times,serif;
-  line-height: 1.42;
-  color: #555;
+
+img {
+    width: auto;
 }
 
 
+/*END OF THE COMMON RULES*/
 
 
+/*HEADER*/
+
+figure {
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.onglet {
+    width: 24px;
+    height: 24px;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+}
+
+.cadis {
+    width: 24px;
+    height: 24px;
+}
 
 
+/*END OF THE HEADER*/
 
 
+/*PRINCIPALE TITTLE MOBILE VERSION*/
+
+.titreprincipale {
+    font-size: 14px;
+    color: #555;
+    font-family: Times;
+    text-align: center;
+}
 
 
+/*END OF THE PRINCIPALE TITTLE MOBILE VERSION*/
 
 
+/*ASIDE*/
+
+aside {
+    width: 90%;
+}
+
+aside nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: 2em;
+}
+
+aside nav ul li {
+    border: 1px solid;
+    color: #DCDCDC;
+    width: 22%;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #A3A3A3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+aside nav ul li:hover {
+    background-color: #696969;
+    color: white;
+}
 
 
+/*END OF THE ASIDE*/
 
 
-
-
-
-
-
-
-
+/*DIV OF ALL THE SOCKETS PICTURES*/
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -218,6 +211,7 @@ aside nav ul li
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -235,14 +229,14 @@ aside nav ul li
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -251,6 +245,7 @@ aside nav ul li
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -258,6 +253,7 @@ aside nav ul li
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -271,15 +267,17 @@ aside nav ul li
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -289,255 +287,183 @@ aside nav ul li
 
 @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
-/*header*/
-    .logo
-    {
-      width: 840px;
-      height: 50px;
+    /*header*/
+    .logo {
+        width: 840px;
+        height: 50px;
     }
-/*end of the header*/
-
-
-
-
-
-
-
-
-
-
-
-
+    /*end of the header*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 1024px) {
-/*common rules*/
-.yesdesktop
-{
-  display: block;
-}
-.nodesktop
-{
-  display: none;
-}
-  /*header*/
-header
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: #DCDCDC;
-}
-.logo
-{
-  width: 366px;
-  height: 110px;
-}
-header nav ul li
-{
-  display: inline-flex;
-  padding: 1em;
-  color:#777777;
-
-}
-header nav ul li:hover
-{
-  background-color: white;
-  border-radius: 5px;
-  color: black;
-}
-  /*end of the header*/
-
-  /*navbar*/
-.navbar
-{
-  width: 100%;
-  background-color: #DCDCDC;
-}
-.navbar ul
-{
-  display:flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin-left: 2em;
-  width: 90%;
-}
-.navbar li
-{
-  width: 90%;
-  margin-top: 1em;
-  margin-left: 2em;
-  border:1px;
-  background-color: white;
-  border-radius: 4px;
-  background-color: rgba(0,0,0,0.05);
-}
-
-.navbar li strong
-{
-  font-weight: normal;
-  font-size: 1.42em;
-  line-height: 1.2em;
-  font-style: italic;
-  color:#a2a2a2;
-}
-.navbar ul li strong:hover,.navbar p:hover
-{
-  color: black;
-}
-
-.navbar li img
-{
-  width: 30%;
-
-}
-.navbar .special, .navbar .special strong, .navbar .special p
-{
-  color: black;
-  background-color: white;
-}
-.navbar p
-{
-  color:#a2a2a2;
-  font-size: 10px;
-  margin-left: 5em;
-  margin-top: -1em;
-}
-  /*end of the navbar*/
-
-/*aside*/
-aside
-{
-  width: 100%;
-}
-.aside
-{
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.aside ul li:hover
-{
-  background-color: #696969;
-  color: white;
-}
-
-.div
-{
-
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-
-
-}
-.div .focus
-{
-  width: 40%;
-}
-.div article
-{
-  width: 24%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.div h2
-{
-  color: #555555;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-
-
-}
-.div span
-{
-  border: 2px solid white;
-  background-color: #FFE4E1;
-  border-radius: 5px;
-  font-size: 12px;
-
-}
-.div span:hover
-{
-  background-color: #FFB6C1;
-}
-footer
-{
-  margin-bottom: 1em;
-}
-.red
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin-top: 2em;
-}
-.red figure
-{
-  width: 30%;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 2.5em;
+    /*common rules*/
+    .yesdesktop {
+        display: block;
+    }
+    .nodesktop {
+        display: none;
+    }
+    /*END OF THE COMMON RULES*/
+    /*HEADER*/
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: #DCDCDC;
+    }
+    .logo {
+        width: 366px;
+        height: 110px;
+    }
+    header nav ul li {
+        display: inline-flex;
+        padding: 1em;
+        color: #777777;
+    }
+    header nav ul li:hover {
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+    }
+    /*END OF THE HEADER*/
+    /*NAVBAR*/
+    .navbar {
+        width: 100%;
+        background-color: #DCDCDC;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-left: 2em;
+        width: 90%;
+    }
+    .navbar li {
+        width: 90%;
+        margin-top: 1em;
+        margin-left: 2em;
+        border: 1px;
+        background-color: white;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .navbar li strong {
+        font-weight: normal;
+        font-size: 1.42em;
+        line-height: 1.2em;
+        font-style: italic;
+        color: #a2a2a2;
+    }
+    .navbar ul li strong:hover, .navbar p:hover {
+        color: black;
+    }
+    .navbar li img {
+        width: 30%;
+    }
+    .navbar .special, .navbar .special strong, .navbar .special p {
+        color: black;
+        background-color: white;
+    }
+    .navbar p {
+        color: #a2a2a2;
+        font-size: 10px;
+        margin-left: 5em;
+        margin-top: -1em;
+    }
+    /*END OF THE NAVBAR*/
+    /*ASIDE*/
+    aside {
+        width: 100%;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .aside ul li:hover {
+        background-color: #696969;
+        color: white;
+    }
+    /*END OF THE ASIDE*/
+    /*DIV OF ALL THE SOCKETS PICTURES*/
+    .div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .div .focus {
+        width: 40%;
+    }
+    .div article {
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div h2 {
+        color: #555555;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .div span {
+        border: 2px solid white;
+        background-color: #FFE4E1;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .div span:hover {
+        background-color: #FFB6C1;
+    }
+    /*END OF THE DIV OF ALL THE SOCKETS PICTURES*/
+    /*FOOTER*/
+    footer {
+        margin-bottom: 1em;
+    }
+    .red {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2em;
+    }
+    .red figure {
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-left: 2.5em;
+    }
+    .red img {
+        width: 40%;
+    }
+    footer nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 100%;
+    }
+    footer nav li:nth-child(2), footer nav li:nth-child(3) {
+        width: 25%;
+    }
+    footer li {
+        font-size: 12px;
+    }
+    /*END OF THE FOOTER*/
 }
 
-.red img
-{
-  width: 40%;
-}
-footer nav ul
-{
-
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  list-style-type: none;
-  width: 100%;
-}
-footer nav li:nth-child(2), footer nav li:nth-child(3)
-{
-  width: 25%;
-}
-footer li
-{
-  font-size: 12px;
-}
-
-}
-
-
-
-
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -546,74 +472,52 @@ footer li
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
+    *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
